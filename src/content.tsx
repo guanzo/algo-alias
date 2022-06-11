@@ -32,7 +32,7 @@ function findAndReplace () {
 }
 
 function watchDomUpdates (cb: () => void, parent = document) {
-    const observer = new MutationObserver(debounce(cb, 100))
+    const observer = new MutationObserver(debounce(cb, 25))
     observer.observe(
         parent.documentElement,
         { childList: true, subtree: true })
