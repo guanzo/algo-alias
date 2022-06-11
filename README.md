@@ -27,3 +27,15 @@ you want to replace, the second value is the alias to display.
 You can replace any text on the page, think of it as a global find and replace.
 
 See the [example aliases](examples/aliases.txt)
+
+
+## Installation
+
+The extension is pending a review by the Chrome team.
+
+Until it's approved, you can
+get the latest version on the release page: https://github.com/guanzo/algo-alias/releases.
+
+* Download the "algo-alias.tar.gz" file
+* Unzip the archive to somewhere on your file system.
+* Follow these instructions: https://developer.chrome.com/docs/extensions/mv3/getstarted/#unpacked
