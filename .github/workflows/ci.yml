@@ -1,0 +1,29 @@
+name: ci
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm ci --prefer-offline --no-audit --progress=false --cache ${{ github.workspace }}/.cache/npm
+
+      - name: Build
+        run: npm run build:zip
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: dist-zip/algo-alias.tar.gz
