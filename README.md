@@ -4,7 +4,9 @@ A chrome extension that lets you add aliases to [AlgoExplorer](https://algoexplo
 
 Turn an address like "7BZEUIEPHZGDK6E673DVOY6BVCCZC6YFAJ3QWROPBZK5XKGE5GUWDYZRUY" into "My Wallet".
 
-or an application like "Application 465818260" into "Algofi Manager App"
+or an application ID like "Application 465818260" into "Algofi Manager App"
+
+or application args like "dXA=" into "update prices"
 
 Before:
 
@@ -21,5 +23,7 @@ After:
 
 Each line in the text box represents an alias. The first value is the text
 you want to replace, the second value is the alias to display.
+
+You can replace any text on the page, think of it as a global find and replace.
 
 See the [example aliases](examples/aliases.txt)
