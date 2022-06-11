@@ -1,4 +1,4 @@
-# ALGO alias
+# ALGO Alias
 
 A chrome extension that lets you add aliases to [AlgoExplorer](https://algoexplorer.io/).
 
